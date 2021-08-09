@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Don't tell anyone</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap');
+  /*
+fontfamilies of this import-----///////
+
+font-family: 'Oswald', sans-serif;  
+font-family: 'Noto Sans JP', sans-serif;
+
+----------//////-------*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .main_div {
+      height: 100vh;
+      width: 100vw;
+      background-image: linear-gradient(#00000078, #00000078), url(Background.jpg);
+      background-position: center;
+      background-size: 100% 100%;
+      overflow: hidden;
+    }
+
+    .main_header {
+      height: 2rem;
+      width: 100vw;
+      display: grid;
+      grid-template-rows: 1.5rem;
+      grid-template-columns: 1fr 3fr;
+      box-shadow: 0px 0px 5px -1px black;
+    }
+
+    .main_header .secSpan {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main_header .secSpan li {
+      list-style: none;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main_header .secSpan li a {
+      color: white;
+      margin: 5px;
+      font-size: 11px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      transform: translateY(2px);
+    }
+
+    .main_header span img {
+      width: 7.5rem;
+      height: 1.5rem;
+    }
+    .main_section p{
+      background-image: linear-gradient(#FF6700, #FCFCFC, #07CA54);
+      color: #004CFF;
+      font-size: 3rem;
+      font-family: 'Oswald', sans-serif;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      transform: translate(0%, -80%);
+    }
+    .main_section span{
+      color: #fff;
+      font-size: 1rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 48%;
+      transform: translate(0%, -52%);
+    }
+    .foter{
+      width: 100%;
+      color: #CFCFCF;
+      font-style: 15px;
+      font-family: sans-serif;
+      background-color: #464646;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <main class="main_div">
+    <header class="main_header">
+      <span><img src="logo.png" alt="logo"></span>
+      <span class="secSpan">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="https://skilloo-coder.github.io/Portfolio/" target="_ayush">My Services</a></li>
+        <li><a href="https://bit.ly/3ixgRto" target="_ayush">about us</a></li>
+        <li><a href="https://bit.ly/2VHb5wB" target="_ayush">contact us</a></li>
+      </span>
+    </header>
+    <section class="main_section">
+      <p>15<sup>th</sup> August 2021</p>
+     <span> Kisi ko batana mat... <br> 
+      तुम अपने हो <br>
+      इसलिए तुम्हें बता रहे हैं <br>
+      15<sup>th</sup>August को school में जलेबी बटेंगी । </span>
+    </section>
+    <footer class="foter">
+      copyright &copy; 2021 . All rights reserved
+    </footer>
+  </main>
+</body>
+
+</html>
